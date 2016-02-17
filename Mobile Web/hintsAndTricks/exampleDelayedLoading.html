@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<!-- Following Snippet of Code Initially changes the size of the webpage to match the device's size -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Above code still allows users to pinch to zoom in and out -->
+	<script type="text/javascript" src="hintsAndTricksJS/delayedLoading.js"></script>
+</head>
+
+
+<body>
+	<!-- Delayed loading Example-->
+
+	<!-- The link in the html tag will show for users that can't fit the news results in their windows. If they can the results should just load-->
+	<div id="newsresults">
+	    <a href="http://www.google.com/search?q=cats&tbm=nws">Search Google News</a>
+
+	</div>
+
+	<!-- Following code calls the code that runs the google API search only if the client's viewport has enough width to handle the results-->
+	<script>
+		if (document.documentElement.clientWidth > 640) {
+		    searchNews('cats');
+		}
+	</script>
+</body>

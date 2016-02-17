@@ -1,0 +1,105 @@
+
+.nav{
+    width:100%;
+    margin-left:auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-bottom-color:black;
+    border-bottom-width:2px;
+    border-bottom-style:solid;
+    box-shadow:4px 0px 7px black;
+}
+
+.nav .nav-item{
+    display:inline-block;
+    box-sizing: border-box;
+    padding-top:24px;
+    padding-bottom:24px;
+    text-align: center;
+    line-height: 20px;
+    width:24%;
+    font-size:1.5em;
+    text-align:center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #616161;
+    padding:1.5em;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #212121;
+    cursor:pointer;
+}
+
+/*Example Flex-Grid system*/
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.container div{
+    height:100px;
+}
+
+.container .ele1{
+    width:100%;
+    background-color:antiquewhite;
+    order:0;
+}
+
+.container .ele2{
+    width:50%;
+    background-color:aqua;
+    order:1;
+}
+
+.container .ele3{
+    width:50%;
+    background-color:aquamarine;
+    order:2;
+}
+
+.container .ele4{
+    width:33.5%;
+    background-color:azure;
+    order:3;
+}
+
+.container .ele5{
+    width:33%;
+    background-color:beige;
+    order:4;
+}
+
+.container .ele6{
+    width:33.5%;
+    background-color:bisque;
+    order:5;
+}
+
+.container .ele7{
+    width:100%;
+    background-color:blue;
+    order:6;
+}
+
+.container .ele8{
+    width:33.5%;
+    background-color:blueviolet;
+    order:7;
+}
+
+.container .ele9{
+    width:33%;
+    background-color:brown;
+    order:8;
+}
+
+.container .ele10{
+    width:33.5%;
+    background-color:cadetblue;
+    order:9;
+}

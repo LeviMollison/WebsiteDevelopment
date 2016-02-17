@@ -1,0 +1,319 @@
+* 
+{
+    box-sizing: border-box;
+    font-family: american-typewriter;
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    height: 100%;
+    background: rgb(255,255,255) url("../images/light-pattern.png") no-repeat;
+	background-size:cover;
+}
+
+@font-face {
+    font-family: american-typewriter;
+    src: url(american-typewriter.ttf);
+}
+
+@-webkit-keyframes display-image-shake {
+    0%   { top:0px;    }
+    25%  { top:40px;    }
+    50%  { top:-25px;  }
+    75%  { top:40px;  }
+    100% { top:0px;    }
+}
+
+.display-image-container{
+	width:80%;
+	position:absolute; top:15%; left:10%;
+	text-align:center;
+}
+
+.display-image{
+	width:12%;
+	box-shadow: 7px 8px 11px black;
+	border-radius:100%;
+	margin-left:12%;
+	margin-bottom:7%;
+	position:relative;
+	left:-6%;
+	-webkit-animation-name: display-image-shake;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    transition:all .5s ease;
+}
+
+.display-image:hover{
+	cursor:pointer;
+	box-shadow:0px 0px 11px 10px white;
+}
+
+.inspirational-quotes{
+	width:100%;
+	background-color:rgba(151,151,151,0.7);
+	height:100px;
+	overflow:hidden;
+	position:absolute; top:87%;
+}
+
+/* Designing the sound panel modals */
+.sound-panel-img{
+	width:820px;
+	max-height:500px;
+	overflow:hidden;
+}
+
+.music-control{
+	transition: all .7s ease;
+	border-radius:100%;
+	width:50px; height:50px;
+	border: solid 3px black;
+	position:absolute;
+}
+
+.music-control:hover{
+	box-shadow:0px 0px 15px 3px yellow;
+	cursor:pointer;
+}
+
+.music-off{
+	color:white;
+	transition: all .5s ease;
+	font-family:american-typewriter;
+	font-weight:200;
+	width:150px;
+	font-size:14pt;
+	position:absolute;left:100%;top:10%;
+}
+
+.music-off:hover{
+	color:red;
+	cursor:pointer;
+}
+
+.sound-panel{
+	width:60%;
+	position:absolute; left:20%; top:15%;
+	z-index:1000;
+	display:none;
+}
+
+/* designing the modal glass */
+.modal-glass{
+	height: 100%;
+	width: 100%;
+	background-color:rgba(0,0,0,0.5);
+	z-index:999;
+	position:absolute;left:0px;top:0px;
+	display:none;
+}
+
+/* Rain forest Sound control positionings */
+.rain-forest-sound-1{
+	left:201px;
+	top:200px;
+}
+
+.rain-forest-sound-2{
+	left:340px;
+	top:180px;
+}
+
+.rain-forest-sound-3{
+	left:601px;
+	top:345px;
+}
+
+.rain-forest-sound-4{
+	left:460px;
+	top:100px;
+}
+
+.rain-forest-sound-5{
+	left:10px;
+	top:100px;
+}
+
+/* Beach sound control positionings */
+
+.beach-sound-1{
+	left:680px;
+	top:300px;
+}
+
+/* Busy city street sound control positionings */
+.busy-city-street-sound-1{
+	left:770px;
+	top:250px;
+}
+
+.busy-city-street-sound-2{
+	left:280px;
+	top:250px;
+}
+
+.busy-city-street-sound-3{
+	left:180px;
+	top:100px;
+}
+
+.busy-city-street-sound-4{
+	left:480px;
+	top:240px;
+}
+
+.busy-city-street-sound-5{
+	left:140px;
+	top:300px;
+}
+
+/* cat sound control positionings */
+.cat-sound-1{
+	left:250px;
+	top:260px;
+}
+
+/* excited sound control positionings and special outline color */
+.excited-sound-1{
+	border-color:white;
+	left:200px;
+	top:50px;
+}
+
+.excited-sound-2{
+	border-color:white;
+	left:250px;
+	top:250px;
+}
+
+.excited-sound-3{
+	border-color:white;
+	left:450px;
+	top:280px;
+}
+
+.excited-sound-4{
+	border-color:white;
+	left:570px;
+	top:200px;
+}
+
+/* Music box sound control positions */
+.music-box-sound-1{
+	left:600px;
+	top:270px;
+}
+
+.music-box-sound-2{
+	left:400px;
+	top:200px;
+}
+
+.music-box-sound-3{
+	left:240px;
+	top:170px;
+}
+
+.music-box-sound-4{
+	left:100px;
+	top:180px;
+}
+
+/* wind chimes sound control positions */
+.wind-chimes-sound-1{
+	left:50px;
+	top:100px;
+}
+
+.wind-chimes-sound-2{
+	left:250px;
+	top:200px;
+}
+
+.wind-chimes-sound-3{
+	left:450px;
+	top:100px;
+}
+
+.wind-chimes-sound-4{
+	left:650px;
+	top:200px;
+}
+
+.wind-chimes-sound-5{
+	left:550px;
+	top:300px;
+}
+
+/* train sound control positions */
+.train-sound-1{
+	left:340px;
+	top:210px;
+}
+
+/* serenety sound control positions */
+.serene-sound-1{
+	left:100px;
+	top:50px;
+}
+
+.serene-sound-2{
+	left:170px;
+	top:150px;
+}
+
+.serene-sound-3{
+	left:100px;
+	top:250px;
+}
+
+.serene-sound-4{
+	left:170px;
+	top:330px;
+}
+
+.serene-sound-5{
+	left:570px;
+	top:50px;
+}
+
+.serene-sound-6{
+	left:520px;
+	top:150px;
+}
+
+.serene-sound-7{
+	left:570px;
+	top:250px;
+}
+
+/* turns all innactive elements back on */
+.innactive{
+	display:none;
+}
+
+.active{
+	display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

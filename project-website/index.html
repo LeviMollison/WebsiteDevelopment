@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <title>Sounds for a Journey</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+	<!-- The modal glass, to be used to close the sound panels in use -->
+	<div close-sound-panel class='modal-glass'></div>
+
+	<!-- Contains the displayed images -->
+	<section class='display-image-container'>
+		<img class='display-image' style='-webkit-animation-delay: 1s;' open-sound-panel='rain-forest' src='images/rain-forest.png' />
+		<img class='display-image' style='-webkit-animation-delay: 5s;' open-sound-panel='beach' src='images/beach.png' />
+		<img class='display-image' style='-webkit-animation-delay: 2s;' open-sound-panel='busy-city-street' src='images/busy-city-street.png' />
+		<img class='display-image' style='-webkit-animation-delay: 2.5s;' open-sound-panel='cat' src='images/cat.png' /><br/>
+		<img class='display-image' style='-webkit-animation-delay: 8s;' open-sound-panel='excited' src='images/excited.png' />
+		<img class='display-image' style='-webkit-animation-delay: 7s;' open-sound-panel='music-box' src='images/music-box.png' />
+		<img class='display-image' style='-webkit-animation-delay: 6s;' open-sound-panel='wind-chimes' src='images/wind-chimes.png' />
+		<img class='display-image' style='-webkit-animation-delay: 2s;' open-sound-panel='train' src='images/train.png' /><br/>
+		<img class='display-image' style='-webkit-animation-delay: 4s;' open-sound-panel='serene' src='images/serene.png' />
+	</section>
+
+	<!-- Contains the inspirational quote tags 
+	<section class='inspirational-quotes'>
+
+	</section>
+	-->
+
+	<!-- Contains the sound panel modals -->
+	<section class='sound-panel-modal-container'>
+		
+		<div class="sound-panel" sound-panel="rain-forest">
+	        <img src='images/rain-forest.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control rain-forest-sound-1' turn-on-sound='../sound-files/70739__benbojangles__peacefull-woods-walk.ogg'></div>
+	        <div class='music-control rain-forest-sound-2' turn-on-sound='../sound-files/210907__fonotecadecanarias__night-ambience-at-jardin-canario-botanic-garden.mp3'></div>
+	        <div class='music-control rain-forest-sound-3' turn-on-sound='../sound-files/220615__lolitaperdurabo__udale-bay.wav'></div>
+	        <div class='music-control rain-forest-sound-4' turn-on-sound='../sound-files/72702__sonsdebarcelona__moixo.mp3'></div>
+	        <div class='music-control rain-forest-sound-5' turn-on-sound='../sound-files/under the tree in the rain.mp3'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+
+	    <div class="sound-panel" sound-panel="beach">
+	        <img src='images/beach.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control beach-sound-1' turn-on-sound='../sound-files/43760__digifishmusic__gentle-sea-on-flat-beach.wav'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+
+	    <div class="sound-panel" sound-panel="busy-city-street">
+	        <img src='images/busy-city-street.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control busy-city-street-sound-1' turn-on-sound='../sound-files/134888__jberkuta14__ambient.wav'></div>
+	        <div class='music-control busy-city-street-sound-2' turn-on-sound='../sound-files/155665__wcarcary__may-11-cafe-2.wav'></div>
+	        <div class='music-control busy-city-street-sound-3' turn-on-sound='../sound-files/179897__batman6661__building-rooftops-ambient.wav'></div>
+	        <div class='music-control busy-city-street-sound-4' turn-on-sound='../sound-files/261985__ericlemans__busy-bar-ambient-sound.wav'></div>
+	        <div class='music-control busy-city-street-sound-5' turn-on-sound='../sound-files/153545__sphion__city-square-outdoor-serving.wav'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+
+	    <div class="sound-panel" sound-panel="cat">
+	        <img src='images/cat.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control cat-sound-1' turn-on-sound='../sound-files/31505__offtheline__audrey-pillow-licking.wav'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+
+	    <div class="sound-panel" sound-panel="excited">
+	        <img src='images/excited.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control excited-sound-1' turn-on-sound='../sound-files/167233__theomegapixel__happy.wav'></div>
+	        <div class='music-control excited-sound-2' turn-on-sound='../sound-files/170859__arightwizard__arpeggiated-violin-w-reverb.wav'></div>
+	        <div class='music-control excited-sound-3' turn-on-sound='../sound-files/202242__luckylittleraven__cheerfulpiano.wav'></div>
+	        <div class='music-control excited-sound-4' turn-on-sound='../sound-files/215767__endersniper123__awesome-emotional-piano.mp3'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+
+	    <div class="sound-panel" sound-panel="music-box">
+	        <img src='images/music-box.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control music-box-sound-1' turn-on-sound='../sound-files/19899__jfbsauve__musical-box.wav'></div>
+	        <div class='music-control music-box-sound-2' turn-on-sound='../sound-files/60832__pogotron__music-box.wav'></div>
+	        <div class='music-control music-box-sound-3' turn-on-sound='../sound-files/98333__cgeffex__edelweiss-music-box.wav'></div>
+	        <div class='music-control music-box-sound-4' turn-on-sound='../sound-files/165021__setuniman__harmonical-outro-0m-12m2b.wav'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+
+	    <div class="sound-panel" sound-panel="wind-chimes">
+	        <img src='images/wind-chimes.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control wind-chimes-sound-1' turn-on-sound='../sound-files/30606__acclivity__jamesportwindchimes.wav'></div>
+	        <div class='music-control wind-chimes-sound-2' turn-on-sound='../sound-files/131099__northern87__fantasy-windchimes.wav'></div>
+	        <div class='music-control wind-chimes-sound-3' turn-on-sound='../sound-files/217800__minian89__wind-chimes.wav'></div>
+	        <div class='music-control wind-chimes-sound-4' turn-on-sound='../sound-files/222893__adelantemos__wind-chimes-02.wav'></div>
+	        <div class='music-control wind-chimes-sound-5' turn-on-sound='../sound-files/256152__bmccoy2__awindchimes113014lincolnne24degrees75hi.mp3'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+
+	    <div class="sound-panel" sound-panel="train">
+	        <img src='images/train.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control train-sound-1' turn-on-sound='../sound-files/9260__ingeos__passing-train-by-ingeos.mp3'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+
+	    <div class="sound-panel" sound-panel="serene">
+	        <img src='images/serene.jpg' class='sound-panel-img' />
+	        <!-- Will act as sound controls: turns on music, turn off music by closing modal -->
+	        <div class='music-control serene-sound-1' turn-on-sound='../sound-files/170858__setuniman__happy-again-0x20mbc 2.mp3'></div>
+	        <div class='music-control serene-sound-2' turn-on-sound='../sound-files/170858__setuniman__happy-again-0x20mbc.mp3'></div>
+	        <div class='music-control serene-sound-3' turn-on-sound='../sound-files/170914__setuniman__happy-again-0x20pic.mp3'></div>
+	        <div class='music-control serene-sound-4' turn-on-sound='../sound-files/171085__setuniman__less-happy-0x26p.mp3'></div>
+	        <div class='music-control serene-sound-5' turn-on-sound='../sound-files/171394__setuniman__cozy-0x38m.mp3'></div>
+	        <div class='music-control serene-sound-6' turn-on-sound='../sound-files/183881__erokia__elementary-wave-11.wav'></div>
+	        <div class='music-control serene-sound-7' turn-on-sound='../sound-files/271556__limetoe__dream-harps.wav'></div>
+	        <!-- For those annoyed by the sounds -->
+	        <div class='music-off' turn-off-sound>turn music off</div>
+	    </div>
+	</section>
+	
+    <script src="scripts/jquery-2.1.1.js"></script>
+    <script src="scripts/scripts.js"></script>  
+
+</body>
+</html>

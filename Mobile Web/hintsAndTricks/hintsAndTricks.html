@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+	<!-- Following Snippet of Code Initially changes the size of the webpage to match the device's size -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Above code still allows users to pinch to zoom in and out -->
+	
+
+	<!-- When creating CSS use the content itself to decide how the layout should adjust to it's container-->
+	<!-- A basic design to follow is to Create multiple stylesheets: 1 for larger screens and 1 for smaller-->
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+	<link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
+
+	<!--[if (lt IE 9)&(!IEMobile)]>
+	<link rel="stylesheet" type="text/css" href="enhanced.css" />
+	<![endif]-->
+	<!-- For IE9 and b4 both mobile and desktop use respond.js, since they do not support media queries -->
+</head>
+
+
+<body>
+	<!-- Using Special Characters included in HTML5 reduces need for some images, lowering HTTP requests and saving time-->
+	<!-- 
+		Solid, filled in rating star 
+		<div> &#9733 </div>
+
+		empty, unfilled rating star 
+		<div> &#9734 </div> 
+	-->
+	<!-- Search and Menu shouldn't show when there's no space. JS takes care of that for us-->
+	<ul  id="nav-anchors" class="nav-anchors">
+	  <li><a href="#nav" id="menu-anchor">Menu</a></li>
+	  <li><a href="#search" id="search-anchor">Search</a></li>
+	</ul>
+	<form id="search" action="#" method="post" class="search reveal">
+	  <fieldset>
+	    <legend>Search the Site</legend>
+	    <input type="search" placeholder="Search Store" />
+	    <input type="submit" value="Search" />
+	  </fieldset>
+	</form>
+	<nav id="nav" class="nav reveal">
+	  <ul role="navigation">
+	    <li><a href="#">T-shirts</a></li>
+	    <li><a href="#">Hoodies</a></li>
+	    <li><a href="#">Pants</a></li>
+	  </ul>
+	</nav>
+
+	<!-- The image gallery is a large images with image content within it. helps browsers with little to know JS use-->
+	<div id="product-img" class="product-img">
+	  <figure class="img-container" id="img-container">
+	    <img src="images/product_img_1.jpg" alt="Super Ffly T-shirt" />
+	  </figure>
+	  <nav>
+	    <ul>
+	      <li><a href="images/product_img_1.jpg"><img src="images/product_img_1_thumb.jpg" alt="Super Ffly Men's Shirt" /></a></li>
+	      <li><a href="images/product_img_2.jpg"><img src="images/product_img_2_thumb.jpg" alt="Super Ffly Women's Shirt" /></a></li>
+	      <li><a href="images/product_img_3.png"><img src="images/product_img_3_thumb.jpg" alt="Ffly Logo" /></a></li>
+	    </ul>
+	  </nav>
+	</div>
+
+	<!-- To keep loading cheap, we don't include related content. we give users a link to access should
+		 they want it, or if the screen reaches a certain size show it
+	-->
+	<section class="aux related-products" id="related-products">
+	  <header id="tab-related">
+	    <a href="related.html">
+	      <h2>Similar T-shirts</h2>
+	    </a>
+	  </header>
+	</section>
+	<section class="aux reviews" id="reviews">
+	  <header id="tab-reviews">
+	    <a href="reviews.html">
+	      <h2>8 Reviews</h2>
+	      <ol class="star">
+	        <li class="on">&#9733;</li>
+	        <li class="on">&#9733;</li>
+	        <li class="on">&#9733;</li>
+	        <li class="on">&#9733;</li>
+	        <li>&#9734;</li>
+	      </ol>
+	    </a>
+	  </header>
+	</section>
+
+	<footer>
+		<!-- Allows mobile users to immediatly call the posted number by clicking it -->
+		<a href="tel:+18005550199">1-800-555-0199</a>
+	</footer>
+	<script src="jquery-2.1.1.js"></script>
+	<script src="modernizr.custom.54935.js"></script>
+	<script src="mobileSiteDemo.js"></script>
+</body>

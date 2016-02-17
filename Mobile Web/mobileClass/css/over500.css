@@ -1,0 +1,10 @@
+@media screen and (min-width:500px){
+    body{background-color:antiquewhite;}
+}
+
+/* can also use media queries like the following */
+@media screen and (min-width:800px){
+    body{background-color:aqua;}
+}
+
+/* balance btw manny small link http request and few big media http request */

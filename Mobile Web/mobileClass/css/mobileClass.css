@@ -1,0 +1,78 @@
+/*
+	program using relative size for responsive sites
+*/
+
+/* use a max-width catch of 100% to ensure no horizontal scrolling */
+img, embed, object, video { max-width:100%;}
+
+/* human fingers are about 48 by 48 pixels, can make smaller but no less than 40 */
+
+nav, a, button, .button{
+	min-width:48px;
+	min-height:48px;
+}
+
+/* code is: display:flex */
+/* flex-wrap is pretty nifty, tries to fit things on a single line, or else wrap around if too large */
+/* order allows you to change the order of your elements on the fly, no changes to html */
+
+
+/* Column Drop Layout Example */
+
+.bluec{background-color:aqua;}
+.greenc{background-color:aquamarine;}
+.purplec{background-color:lavender;}
+
+.containerc{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:100%;
+    height:45px;
+}
+
+@media screen and (min-width:450px){
+    .bluec{width:25%;order:1;}
+    .greenc{width:75%;order:2;}
+    .purplec{width:100%;order3;}
+}
+
+@media screen and (min-width:600px){
+    .bluec{width:25%;}
+    .greenc{width:50%;}
+    .purplec{width:25%;}
+}
+
+/*Mostly Fluid*/
+
+.containerf{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.bluef{background-color:aqua;}
+.greenf{background-color:aquamarine;}
+.purplef{background-color:lavender;}
+.yellowf{background-color:yellow;}
+.brownf{background-color:brown;}
+
+@media screen and (min-width:450px){
+    .purplef, .greenf {width:50%;}
+}
+
+@media screen and (min-width:550px){
+    .yellowf,.brownf{ width:33.5%; }
+    .purplef{ width:33%; }
+    .bluef,.greenf{ width:50%; }
+}
+
+/* Important: set's a finally large width, and only adds margin as things grow forward */
+@media screen and (min-width:700px){
+    .containerf{
+        width:700px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}

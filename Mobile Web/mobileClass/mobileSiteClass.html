@@ -1,0 +1,37 @@
+<!-- 
+	device-width tells the browser to provide the DIP, device independent pixels
+	initial-scale tels browser to establish 1:1 relationship btw CSS pixels and DIP 
+	always set your viewport!
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/mobileClass.css">
+        <!-- 
+                media queries tell pages what style sheets to run and more
+                Screen and Print are the 2 most used queries , only ones to worry about for now
+                Choose breakpoints based off of content alone
+        -->
+        
+        <!-- <link rel="stylesheet" media="screen and (min-width:500px)" href="mobileSiteClassCSS/over500.css"> -->
+        <link rel="stylesheet" href="mobileSiteClassCSS/over500.css">
+	</head>
+	<body>
+        <!-- Column Drop Layout -->
+        <div class="containerc">
+            <div class="box bluec"></div>
+            <div class="box greenc"></div>
+            <div class="box purplec"></div>
+        </div>
+        </br>
+        <!-- Mostly Fluid Layout -->
+        <div class="containerf">
+            <div class="box bluef"></div>
+            <div class="box greenf"></div>
+            <div class="box purplef"></div>
+            <div class="box yellowf"></div>
+            <div class="box brownf"></div>
+        </div>
+	</body>
+</html>

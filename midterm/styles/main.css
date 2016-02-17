@@ -1,0 +1,213 @@
+/* Setting up layout, mobile version is default */
+.container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width:100%;
+    height:100%;
+}
+
+.button-cont{
+    width:100%;
+    height:80%;
+    padding:20px;
+    text-align:center;
+}
+
+.button-cont div{
+    display:inline-block;
+    width:48px;
+    height:48px;
+    border-radius:50px;
+    border: 3px solid black;
+    margin-right:48px;
+    margin-bottom:48px;
+    transition: border-color .5s ease;
+    transition: background-color .5s ease;
+}
+
+.button-cont div:hover{
+    border-color:white;
+    cursor:pointer;
+}
+
+.active{
+    background-color:rgb(148,32,147);   
+}
+
+@font-face {
+    font-family: american-typewriter;
+    src: url(american-typewriter.ttf);
+}
+
+.quote{
+    border-top-color:rgba(255,255,255,1);
+    overflow:hidden;
+    color:white;
+    text-shadow:2px 2px 7px white;
+    font-family:american-typewriter;
+    font-size:12pt;
+    text-align:center;
+    padding:5px;
+    padding-top:1.6em;
+    line-height:1.7;
+    background-image: url('../images/quote.jpg');
+    background-size: cover;
+}
+
+.weather{
+    color:white;
+    padding-top:3em;
+    font-size:1.5em;
+    text-align:center;
+    text-shadow:2px 2px 7px white;
+}
+
+/* Flex-direction: tells it which way we're flexing the box */
+
+.box {
+    width:100%;
+    box-sizing:border-box;
+    background-size:cover;
+}
+
+.weather, .greeting, .vol-scroll {display:none;}
+
+.sel-img{
+    order:1;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width:100%;
+    background-image:url('../images/light-pattern.png');
+}
+
+.quote{
+    order:2;
+    width:100%;
+    flex:1;
+}
+
+.footer{
+    order:3;
+    flex-grow: .75;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color:bisque;
+}
+
+@media screen and (min-width:1024px){
+    .container{
+        flex-direction:row;
+    }
+    .sel-img{
+        order:1;
+        flex:inherit;
+        width:100%;
+        height:70%;
+        background-image:url('../images/light-pattern.png');
+        background-size:cover;
+        }
+
+    .quote{
+        order:2;
+        width:50%;
+        height:20%;
+        flex:inherit;
+        
+    }
+    
+    .weather{
+        order:3;
+        width:50%;
+        height:20%;
+        background-color:aqua;
+        flex:inherit;
+        display:block;
+    }
+
+    .footer{
+        order:4;
+        flex:inherit;
+        width:100%;
+        height:10%;
+        background-color:bisque;
+    }
+    
+}
+/* 1200 */
+@media screen and (min-width:1280px){
+    .container{
+        flex-direction: column;
+        width:100%;
+        height:100%;
+    }
+    
+    .sel-img{
+        height:100%;
+        width:70%;
+        order:1;
+    }
+    
+    .weather{
+        width:30%;
+        display:block;
+        order:3;
+        height:25%;
+        flex:inherit;
+        background-color:aqua;
+    }
+    
+    .greeting{
+        width:30%;
+        display:block;
+        order:2;
+        height:25%;
+        flex:inherit;
+        background-color:brown;
+    }
+    
+    .quote{
+        width:30%;
+        height:25%;
+        order:4;
+        flex:inherit;
+        
+    }
+    .footer{
+        flex:inherit;
+        order:5;
+        width:30%;
+        background-color: azure;
+        height:25%;
+    }
+    
+}
+
+/* Keep just in case
+@media screen and (min-width:600px){
+    .container{
+        width:100%;
+        height:100%;
+    }
+    
+    .sel-img{
+        height:40%;
+        width:100%;
+    }
+    
+    .weather{
+        width:50%;
+        flex-grow:1.3;
+    }
+    
+    .quote{
+        width:50%;
+        flex-grow:1.3;
+    }
+    .footer{
+        flex-grow:.3;
+    }
+    
+}
+*/
